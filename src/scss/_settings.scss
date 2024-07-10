@@ -99,3 +99,13 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  column-gap: var(--offset);
+  grid-template-columns: repeat(12, 1fr);
+}

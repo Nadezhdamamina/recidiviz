@@ -1,1 +1,17 @@
-// ваш код
+.header {
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  align-items: center;
+  padding-right: 16px;
+
+  &__list {
+    align-items: center;
+    margin-right: 32px;
+    gap: 51px;
+  }
+}
