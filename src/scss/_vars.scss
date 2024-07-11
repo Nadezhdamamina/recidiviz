@@ -2,13 +2,18 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-family: "PublicSans", sans-serif;
+  --second-family: "LibreBaskerville", sans-serif;
   --content-width: 1152px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
+  --main-size: 13px;
+  --second-size: 15px;
   --offset: 32px;
 
   // colors
   --light-color: #fff;
+  --accent-color: #0e82c5;
+  --active-color: #a31207;
 }
