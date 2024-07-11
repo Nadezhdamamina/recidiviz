@@ -1,4 +1,5 @@
 .header {
+  padding: 17px 0;
   &__container {
     align-items: center;
     justify-content: space-between;
@@ -22,4 +23,27 @@
     margin-right: 32px;
     gap: 51px;
   }
+
+  &__link {
+    font-size: var(--main-size);
+    color: var(--light-color);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--accent-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+}
+
+.nav__link.focus-visible {
+  outline: 1px solid var(--active-color);
+  outline-offset: 3px;
 }
