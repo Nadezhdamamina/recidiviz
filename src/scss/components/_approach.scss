@@ -1,0 +1,161 @@
+.approach {
+  &__top {
+    padding: 80px 0;
+    background-color: #f7f8f8;
+  }
+
+  &__left {
+    padding-top: 33px;
+    grid-column: 5 span;
+  }
+
+  &__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    grid-column: 7 / 6 span;
+    gap: 8px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: #003331;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 37px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-color);
+  }
+
+  &__btn {
+    padding: 16px 34px;
+    border: 1px solid rgba(53, 83, 98, 0.2);
+    color: #00413e;
+  }
+
+  &__bottom {
+    padding: 24px 0;
+    background-color: var(--light-color);
+  }
+
+  &__item {
+    grid-column: 2 span;
+  }
+
+  &__link {
+    display: block;
+    border-top: 1px solid rgba(53, 83, 98, 0.2);
+    padding-top: 17px;
+    padding-left: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-color);
+    background-position: left top 15px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    &:active {
+      border-color: var(--active-color);
+      color: var(--active-color);
+    }
+
+    &--ted {
+      background-image: url("../img/approach-icon-1.png");
+    }
+    &--nyt {
+      background-image: url("../img/approach-icon-2.png");
+    }
+    &--scoop {
+      background-image: url("../img/approach-icon-3.png");
+    }
+    &--press {
+      background-image: url("../img/approach-icon-4.png");
+    }
+    &--time {
+      background-image: url("../img/approach-icon-5.png");
+    }
+    &--freethink {
+      background-image: url("../img/approach-icon-6.png");
+    }
+  }
+}
+
+.approach__link.focus-visible {
+  border-color: var(--active-color);
+}
+
+.info {
+  height: 680px;
+  display: flex;
+  position: relative;
+  background-color: #001414;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 287px;
+    height: 100%;
+    background-image: url("../img/info-1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    flex-shrink: 0;
+    width: 287px;
+    height: 100%;
+    background-image: url("../img/info-2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0 82px;
+    border-left: 1px solid #001414;
+    border-right: 1px solid #001414;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--light-color);
+  }
+
+  &__descr {
+    margin: 0;
+    //margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--light-color);
+  }
+}
