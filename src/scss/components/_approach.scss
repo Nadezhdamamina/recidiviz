@@ -142,8 +142,9 @@
     border-right: 1px solid #001414;
   }
   &__title {
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 21px;
+    max-width: 542px;
     font-weight: 400;
     font-size: 22px;
     line-height: 22px;
@@ -151,7 +152,8 @@
   }
 
   &__descr {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 542px;
     //margin-bottom: 21px;
     font-weight: 400;
     font-size: 15px;
