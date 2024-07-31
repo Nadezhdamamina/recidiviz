@@ -23,7 +23,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 22px;
-    color: #003331;
+    color: var(--dark-color);
   }
 
   &__descr {
@@ -138,8 +138,8 @@
     justify-content: center;
     flex-grow: 1;
     padding: 0 82px;
-    border-left: 1px solid #001414;
-    border-right: 1px solid #001414;
+    border-left: 1px solid var(--dark-color);
+    border-right: 1px solid var(--dark-color);
   }
   &__title {
     margin: 0;

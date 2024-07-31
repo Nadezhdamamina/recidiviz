@@ -5,9 +5,20 @@
   <body class="page__body">
     <div class="site-container">
       @include('partials/header.html')
-      <main class="main">@include('partials/hero.html')</main>
-      @include('partials/footer.html') @include('partials/steps.html')
-      <!-- @include('html/h1.html') пример include -->
+      <main class="main">
+        @include('partials/hero.html') @include('partials/footer.html')
+        @include('partials/steps.html')
+        <div class="graphics">
+          <img
+            class="graphics-img"
+            src="img/grap_2x.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+
+        @include('partials/information.html')
+      </main>
     </div>
   </body>
 </html>
